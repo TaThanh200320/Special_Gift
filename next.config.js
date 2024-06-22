@@ -1,7 +1,10 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: "export",
-  assetPrefix: "./",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/special-gift/" : "",
   images: {
     unoptimized: true,
   },
 };
+
+module.exports = nextConfig;
