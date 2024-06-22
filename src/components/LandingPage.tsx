@@ -10,7 +10,7 @@ export const LandingPage: React.FC = () => {
         width={800}
         height={800}
         alt="Image"
-        className="w-screen h-screen object-cover"
+        className="w-screen h-screen "
       ></Image>
     </section>
   );
