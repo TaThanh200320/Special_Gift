@@ -3,9 +3,9 @@ version: "3.8"
 services:
   ancorner:
     ports:
-      - "3001:3001"
+      - "3000:3000"
     build:
       context: .
-      dockerfile: deploy/Dockerfile
+      dockerfile: Dockerfile
     image: tathanh200320/special_gift:latest
     restart: unless-stopped
